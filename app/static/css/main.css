@@ -1,0 +1,35 @@
+body {
+font-size: 1rem;
+line-height: 1.5;
+background-color: #2a2a2a;
+font-weight: 300;
+}
+
+/* HEADER ===========================================================*/
+
+header {
+    justify-content: space-between;
+    background-color: #008855;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+}
+
+ul {
+  list-style: none;
+  padding: 1rem;
+  margin: 0;
+  display: flex;
+  justify-content: space-evenly;
+  gap: 20px;
+}
+
+/* MAIN ===========================================================*/
+
+.index-hero img {
+width: 100%;
+height: auto;
+
+}
