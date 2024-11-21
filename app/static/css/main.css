@@ -1,15 +1,17 @@
 body {
 font-size: 1rem;
 line-height: 1.5;
-background-color: #2a2a2a;
-font-weight: 300;
+
 }
+
 
 /* HEADER ===========================================================*/
 
 header {
+  
     justify-content: space-between;
     background-color: #008855;
+    position: sticky;
 }
 
 nav a {
@@ -23,13 +25,35 @@ ul {
   margin: 0;
   display: flex;
   justify-content: space-evenly;
-  gap: 20px;
 }
+
+.logo {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
 
 /* MAIN ===========================================================*/
 
 .index-hero img {
 width: 100%;
 height: auto;
+}
 
+.index-hero title {
+    width: 100%;
+    z-index: 2;
+   
+    }
+
+
+
+.footer-container {
+    border-style: solid;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap: 10rem;
+    
 }
