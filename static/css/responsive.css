@@ -1,0 +1,41 @@
+/* INDEX PAGE  ===========================================================*/
+/* article responsive  ===========================================================*/
+
+@media (max-width: 768px) {
+  .home-container {
+    grid-template-columns: 1fr;
+  }
+
+  .home-container-first,
+  .home-container-second {
+    padding: 15px;
+  }
+}
+
+/* highlighted responsive  ===========================================================*/
+
+@media (max-width: 768px) {
+  .highlighted-container {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .highlighted-container-first,
+  .highlighted-container-second {
+    width: 100%;
+    border-right: none;
+    padding: 1rem;
+  }
+
+  .highlighted-row {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .highlighted-container-first img,
+  .highlighted-container-second img {
+    width: 100%;
+    height: auto;
+  }
+}
