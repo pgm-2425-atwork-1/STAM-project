@@ -1,15 +1,14 @@
-
-
 /* home hero ===========================================================*/
 
-
-.visually-hidden {   
-overflow: hidden; height: 1px;  width: 1px; 
-position: absolute;  
-clip: rect(0 0 0 0);
-clip-path: inset(50%);  
-white-space: nowrap;}
-
+.visually-hidden {
+  overflow: hidden;
+  height: 1px;
+  width: 1px;
+  position: absolute;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
 
 .home-hero {
   position: relative;
@@ -32,8 +31,7 @@ white-space: nowrap;}
 
 /* main ===========================================================*/
 
-main h2 {
-
+.titles {
   display: flex;
   padding: 3rem 5rem;
 }
@@ -42,32 +40,32 @@ main h2 {
 
 .home-container {
   display: grid;
-  grid-template-columns: repeat(2, 1fr); 
+  grid-template-columns: repeat(2, 1fr);
   width: 100%;
 }
 
 /*  home container styling  ===========================================================*/
 
 .home-container-first {
-  background-color: #FF5000;
-  color: white; 
+  background-color: #ff5000;
+  color: white;
   display: flex;
-  flex-direction: column; 
+  flex-direction: column;
 }
 
 .home-container-second {
   background-color: #008855;
   color: white;
   display: flex;
-  flex-direction: column; 
+  flex-direction: column;
 }
 
 /* home container image styling  ===========================================================*/
 
 .home-container-first img,
 .home-container-second img {
-  width: 100%; 
-  height: auto; 
+  width: 100%;
+  height: auto;
 }
 
 /* home container title styling  ===========================================================*/
@@ -79,7 +77,6 @@ main h2 {
 /* home container date styling  ===========================================================*/
 
 .home-container span {
-
   display: flex;
   flex-direction: column;
   font-family: "Albert Sans";
@@ -92,31 +89,37 @@ main h2 {
 }
 
 .home-container p {
-  padding: 2rem
+  padding: 2rem;
 }
-
 
 /* highlighted container START  ===========================================================*/
 
 .highlighted-container {
   display: flex;
-  width: 80%; 
-  margin: 0 auto; 
+  width: 80%;
+  margin: 0 auto;
   padding-bottom: 3rem;
-  
 }
 
 /* highlighted container styling  ===========================================================*/
 
+.highlighted-container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 80%;
+  margin: 0 auto;
+  padding-bottom: 3rem;
+}
+
 .highlighted-container-first,
 .highlighted-container-second {
-  background-color: #E5E470;
+  background-color: #e5e470;
   display: flex;
-  width: 41rem;
-  padding: 2rem 2rem 2rem 4rem;
   flex-direction: column;
   gap: 1rem;
-  align-self: stretch;
+  width: 48%;
+  padding: 2rem;
+  box-sizing: border-box;
 }
 
 .highlighted-container-first {
@@ -127,41 +130,40 @@ main h2 {
   display: flex;
   align-items: flex-start;
   gap: 2rem;
-  align-self: stretch;
+  width: 100%;
 }
-
-/* highlighted image styling  ===========================================================*/
 
 .highlighted-container-first img,
 .highlighted-container-second img {
-  width: 11rem;
-  height: 9rem;
+  width: 100%;
+  height: auto;
   object-fit: cover;
 }
-
 
 /* articles container START ===========================================================*/
 
 .article-container {
-
   display: grid;
-  grid-template-columns: repeat(3, 1fr); 
-  width: 70%; 
-  margin: 0 auto; 
+  grid-template-columns: repeat(3, 1fr);
+  width: 70%;
+  margin: 0 auto;
   gap: 10px;
   border-top: 1px solid black;
   padding-bottom: 2rem;
 }
 
 .article-card {
-position: relative;
-padding: 1rem;
-gap: 1rem;
-border-width: 0 1px 0 0; /* Top, Right, Bottom, Left */
-border-style: solid;
-border-color: black;
+  position: relative;
+  padding: 1rem;
+  gap: 1rem;
+  border-width: 0 1px 0 0;
+  border-style: solid;
+  border-color: black;
 }
 
+.article-card img {
+  width: 100%;
+}
 .fly {
   position: absolute;
   left: 1.5rem;
@@ -187,5 +189,59 @@ border-color: black;
   font-weight: 400;
   padding: 10px 0;
 }
+
+/* HE WHO KEEPS REMAINS ===========================================================*/
+/* event container ===========================================================*/
+
+
+.event-container {
+display: flex;
+width: 94rem;
+padding: 10rem 0 0 10rem;
+flex-direction: column;
+align-items: flex-start;
+gap: 40px;
+}
+
+.event-time {
+color: #008855;
+font-size: 2rem;
+font-style: normal;
+font-weight: 400;
+line-height: 124%;
+}
+
+.event-info {
+display: flex;
+align-items: flex-start;
+gap: 40px;
+align-self: stretch;
+}
+
+.event-info img {
+  width: 46rem;
+height: 30rem;
+}
+
+.event-info ul {
+  list-style-type: disc;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1rem;
+  flex: 1 0 0;
+}
+
+/* video container ===========================================================*/
+
+.events-video-container {
+  display: flex;
+  width: 94rem;
+  margin: 5rem 0 5rem 10rem;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2.5rem;
+}
+
 
 
