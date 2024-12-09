@@ -193,11 +193,10 @@
 /* HE WHO KEEPS REMAINS ===========================================================*/
 /* event container ===========================================================*/
 
-
 .event-container {
 display: flex;
-width: 94rem;
-padding: 10rem 0 0 10rem;
+width: 80rem;
+margin: 3rem 0 2rem 2rem;
 flex-direction: column;
 align-items: flex-start;
 gap: 40px;
@@ -236,12 +235,10 @@ height: 30rem;
 
 .events-video-container {
   display: flex;
-  width: 94rem;
-  margin: 5rem 0 5rem 10rem;
+  width: 80rem;
+  margin: 3rem 0 2rem 2rem;
   flex-direction: column;
   align-items: flex-start;
   gap: 2.5rem;
 }
-
-
 
