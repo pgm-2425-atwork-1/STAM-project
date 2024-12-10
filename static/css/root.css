@@ -1,52 +1,44 @@
-/* ROOT ===========================================================*/
-
 body {
   color: black;
-  font-family: "Roboto";
+  font-family: "Roboto", sans-serif;
   font-size: 1rem;
   font-style: normal;
   font-weight: 400;
   line-height: 140%;
 }
 
-p {
-  font-family: Roboto;
-  font-size: 1rem;
+h1,
+h2,
+h3 {
+  font-family: "Albert Sans", sans-serif;
   font-style: normal;
   font-weight: 400;
-  line-height: 140%;
+  line-height: 100%;
 }
 
 h1 {
-  font-family: "Albert Sans";
   font-size: 3.75rem;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 100%;
 }
 
 h2 {
-  font-family: "Albert Sans";
   font-size: 3rem;
-  font-weight: 400;
-  line-height: 100%;
 }
 
 h3 {
-  font-family: "Albert Sans";
   font-size: 2rem;
-  font-style: normal;
   font-weight: 500;
   line-height: 124%;
-}
-
-.nav-arrow g path {
-  fill: white;
 }
 
 a {
   color: black;
   text-decoration: none;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+a:hover {
+  color: #008855;
+  transform: scale(1.1);
 }
 
 /* HEADER ===========================================================*/
@@ -71,33 +63,26 @@ header {
   display: flex;
   justify-content: space-between;
   height: 94px;
- 
 }
 
 body.he-who-keeps-remains .navbar-container {
   background-color: #46aaea;
 }
 
+body.visit .navbar-container {
+  background-color: #f9c5a5;
+}
+
 ul {
   list-style: none;
   align-items: center;
   display: flex;
-
- 
-    padding-left: 1rem;
-  
-  
+  padding-left: 0.8rem;
 }
 
 nav a {
   text-decoration: none;
   color: white;
-}
-
-.nav-arrow {
-  width: 1rem;
-  height: 2rem;
-  margin: 0 2rem 0 1rem;
 }
 
 .nav-right {
@@ -114,6 +99,8 @@ nav a {
   background-color: black;
   height: 100%;
   padding: 2rem;
+  flex: 1;
+  transition: all 0.3s ease;
 }
 
 .language {
@@ -133,7 +120,7 @@ nav a {
 }
 
 .event-arrow {
-  margin-right: 20px;
+  margin-right: 2rem;
 }
 
 /* hamburger =======================================================================*/
@@ -142,6 +129,7 @@ nav a {
   display: none;
   cursor: pointer;
   padding-left: 0.5rem;
+  min-width: 1.5rem;
 }
 
 @media (max-width: 65rem) {
@@ -154,7 +142,7 @@ nav a {
     position: absolute;
     top: 5.8rem;
     width: 100%;
-    height: 18rem;;
+    height: 45rem;
     background-color: #008855;
   }
 
@@ -162,13 +150,15 @@ nav a {
     background-color: #46aaea;
   }
 
+  body.visit .nav-left {
+    background-color: #f9c5a5;
+  }
   .nav-left.active {
     display: flex;
   }
 
   .nav-left li {
-    margin-top: 2em;
-    letter-spacing: 0.1rem;
+    margin-top: 5rem;
     cursor: pointer;
     transition: all 0.3s ease;
   }
@@ -218,9 +208,13 @@ footer {
   flex: 1;
 }
 
-.logos-footer {
+.logos-footer,
+.socials,
+.copyrights-content ul {
   display: flex;
   gap: 1rem;
+  margin: 0;
+  padding: 0;
 }
 
 .footer-section-second button {
@@ -240,11 +234,6 @@ footer {
   transform: scale(1.1);
 }
 
-.socials {
-  display: flex;
-  gap: 1rem;
-}
-
 .socials a {
   display: flex;
   justify-content: center;
@@ -252,27 +241,13 @@ footer {
   width: 3rem;
   height: 3rem;
   border-radius: 50%;
-  border: 2px solid;
+  border: 1px solid;
   transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 .socials a:hover {
   background-color: #008855;
-  transform: scale(1.1);
 }
-
-.languages a {
-  margin-right: 1rem;
-  text-decoration: none;
-  color: inherit;
-  transition: color 0.3s ease;
-}
-
-.languages a:hover {
-  color: #008855;
-}
-
-/* copyrights ===========================================================*/
 
 .copyrights {
   background-color: #2a2a2a;
@@ -288,17 +263,6 @@ footer {
   flex-wrap: wrap;
 }
 
-.copyrights-content ul {
-  display: flex;
-  gap: 1rem;
-  padding: 0;
-  margin: 0;
-}
 .copyrights-links a {
   color: white;
-}
-
-.copyrights-icons {
-  display: flex;
-  gap: 1rem;
 }

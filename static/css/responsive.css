@@ -1,9 +1,4 @@
-/* HEADER  ===========================================================*/
-
-.hamburger-menu {
-  cursor: pointer;
-  display: none;
-}
+/* header responsive ===========================================================*/
 
 @media (max-width: 64rem) {
   .nav-left {
@@ -11,8 +6,12 @@
   }
 
   .nav-right {
-    justify-content: end;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
   }
+
   .tickets {
     text-align: center;
   }
@@ -24,9 +23,7 @@
   }
 }
 
-
-
-/* FOOTER  ===========================================================*/
+/* footer responsive  ===========================================================*/
 
 @media (max-width: 65rem) {
   .footer-container {
@@ -174,3 +171,5 @@
     width: 100%;
   }
 }
+
+/* VISIT page  ===============================================
