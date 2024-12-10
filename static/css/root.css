@@ -153,6 +153,7 @@ nav a {
   body.visit .nav-left {
     background-color: #f9c5a5;
   }
+
   .nav-left.active {
     display: flex;
   }
@@ -265,4 +266,18 @@ footer {
 
 .copyrights-links a {
   color: white;
+}
+
+.copyrights-icons {
+  display: flex;
+}
+
+.made-by {
+  margin-left: 2rem;
+}
+
+.copyrights-icons {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
 }

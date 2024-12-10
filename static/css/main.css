@@ -240,7 +240,7 @@
 
 .events-video-container {
   display: flex;
-  width: 80rem;
+  width: 55rem;
   margin: 3rem 0 2rem 2rem;
   flex-direction: column;
   align-items: flex-start;
@@ -258,8 +258,8 @@
 }
 
 .visit-container img {
- width: 100%;
- align-items: center;
+  width: 100%;
+  display: block;
 }
 
 .columns {
@@ -269,7 +269,7 @@
   margin-top: 2rem;
 }
 
-.secondery-titles {
+.secondary-titles {
   padding: 1rem 0 2rem 0;
   border-top: 1px solid black;
 }
@@ -287,18 +287,18 @@
 .extra-prices,
 .contact {
   display: flex;
-flex-direction: column;
-align-items: flex-start;
-gap: 1rem;
-padding-bottom: 2rem;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1rem;
+  padding-bottom: 2rem;
 }
 
 .prices li {
   display: flex;
-align-items: flex-start;
-gap: 24px;
-align-self: stretch;
-border-bottom: 1px solid black;
+  align-items: flex-start;
+  gap: 24px;
+  align-self: stretch;
+  border-bottom: 1px solid black;
 }
 
 .address-links {
@@ -308,8 +308,8 @@ border-bottom: 1px solid black;
   gap: 1.5rem;
   padding: 1rem 0 1rem 0;
   align-self: stretch;
-
 }
+
 .extra-prices li {
   list-style-type: disc;
 }
@@ -318,6 +318,10 @@ border-bottom: 1px solid black;
 .address-links a,
 .contact a {
   text-decoration: underline;
+}
+
+.contact {
+  padding: 1rem 0 1rem 0;
 }
 
 address {
@@ -335,4 +339,43 @@ table td {
   padding: 1rem;
   text-align: left;
   border-bottom: 1px solid black;
+  padding: 1rem 0 1rem 0;
+}
+
+.visit-nav {
+  padding-right: 2rem;
+}
+
+/* ABOUT page ===========================================================*/
+/* about container ===========================================================*/
+
+.about-container {
+  display: flex;
+  width: 53rem;
+  margin: 5rem auto;
+  padding-bottom: 5rem;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+.introSection,
+.feature,
+.mission {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2rem;
+}
+
+.targetAudience p {
+  padding: 1rem 0 1rem 0;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1rem;
+  list-style-type: disc;
+  padding-bottom: 2rem;
 }
