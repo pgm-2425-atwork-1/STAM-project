@@ -5,7 +5,7 @@
   display: none;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 64rem) {
   .nav-left {
     display: none;
   }
@@ -17,22 +17,14 @@
     text-align: center;
   }
 
-  .navbar-container {
-    justify-content: end;
-  }
-
   .hamburger-menu {
-    display: block;
-    position: absolute;
-    top: 2rem;
-    left: 0.5rem;
-  }
-
-  .logo {
-    top: 0;
-    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }
+
+
 
 /* FOOTER  ===========================================================*/
 
