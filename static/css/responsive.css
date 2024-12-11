@@ -65,11 +65,10 @@
 
   .copyrights-icons {
     flex-direction: column;
-    gap: 1rem;
   }
 
   .made-by {
-    margin-top: 1rem;
+   padding-right: 2rem;
   }
 }
 

@@ -349,7 +349,6 @@ table td {
 /* ABOUT page ===========================================================*/
 /* about container ===========================================================*/
 
-/* About Section */
 .about-container {
   display: flex;
   flex-direction: column;
@@ -382,7 +381,6 @@ table td {
   padding-bottom: 2rem;
 }
 
-/* Accordion Section */
 .accordeon-container {
   width: 100%;
   max-width: 53rem;
@@ -427,3 +425,69 @@ table td {
   overflow: hidden;
 }
 
+/* HISTORY page ===========================================================*/
+
+.aside {
+  position: sticky;
+  left: 0;
+  display: flex;
+  justify-content: flex-end;
+  padding: 2rem;
+  margin-bottom: 3rem;
+  height: 13rem;
+  width: 19rem;
+  top: 7rem;
+  background-color: grey;
+}
+
+.aside-links {
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.aside-links li :hover {
+  text-decoration: underline;
+}
+
+.history-container {
+  width: 50%;
+  display: flex;
+  margin: 0 0 0 22rem;
+  flex-direction: column;
+}
+
+.history-container h2 {
+  padding-bottom: 1rem;
+}
+.history-container img {
+  height: 263px;
+  align-self: stretch;
+}
+
+.origin {
+  display: flex;
+  padding: 2rem 0 2rem 0;
+  gap: 40px;
+  align-self: stretch;
+}
+
+.origin img {
+  width: 282px;
+  height: 224px;
+}
+
+.grow {
+  display: flex;
+  align-self: stretch;
+}
+
+.bloom {
+  display: flex;
+  align-items: flex-start;
+  align-self: stretch;
+}
+
+.bloom img {
+  width: 60rem;
+  height: 43rem;
+}
