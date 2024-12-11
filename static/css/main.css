@@ -349,12 +349,14 @@ table td {
 /* ABOUT page ===========================================================*/
 /* about container ===========================================================*/
 
+/* About Section */
 .about-container {
   display: flex;
-  width: 53rem;
+  flex-direction: column;
+  width: 100%;
+  max-width: 53rem;
   margin: 5rem auto;
   padding-bottom: 5rem;
-  flex-direction: column;
   gap: 2.5rem;
 }
 
@@ -368,7 +370,7 @@ table td {
 }
 
 .targetAudience p {
-  padding: 1rem 0 1rem 0;
+  padding: 1rem 0;
 }
 
 .list {
@@ -379,3 +381,49 @@ table td {
   list-style-type: disc;
   padding-bottom: 2rem;
 }
+
+/* Accordion Section */
+.accordeon-container {
+  width: 100%;
+  max-width: 53rem;
+  margin: 0 auto;
+}
+
+.section {
+  border-top: 1px solid black;
+}
+
+.toggle {
+  display: none;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  font-size: 1.25rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.header:hover {
+  background-color: #008855;
+}
+
+.section p {
+  margin: 0;
+  padding: 0 1rem 1rem;
+  display: none;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.toggle:checked + .header + p {
+  display: block;
+}
+
+.section p {
+  overflow: hidden;
+}
+

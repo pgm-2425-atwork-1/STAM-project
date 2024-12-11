@@ -213,3 +213,55 @@ table td {
   padding: 0.5rem;
 }
 }
+
+
+/* ABOUT page  ===========================================================*/
+
+
+@media (max-width: 64rem) { 
+  .about-container {
+    margin: 3rem auto;
+    padding: 3rem 1.5rem;
+    gap: 2rem;
+  }
+
+  .introSection,
+  .feature,
+  .mission {
+    gap: 1.5rem;
+  }
+
+  .header {
+    font-size: 1.125rem; 
+    padding: 0.75rem 1rem;
+  }
+
+  .section p {
+    padding: 0.75rem 1rem;
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 48rem) {
+  .about-container {
+    margin: 2rem auto;
+    padding: 7rem 1rem;
+    gap: 1.5rem;
+  }
+
+  .introSection,
+  .feature,
+  .mission {
+    gap: 1rem;
+  }
+
+  .header {
+    font-size: 1rem; 
+    padding: 0.5rem 0.75rem;
+  }
+
+  .section p {
+    padding: 0.5rem 0.75rem;
+    font-size: 0.875rem;
+  }
+}
